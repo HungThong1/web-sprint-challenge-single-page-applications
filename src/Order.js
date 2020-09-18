@@ -104,7 +104,6 @@ const formSchema = yup.object().shape({
             <option value="large"> Large</option>
             <option value="medium"> Medium </option>
             <option value="small"> Small </option>
-            <option value="personalPizza"> Personal </option>
           </select>
         </form>
       </div>
@@ -112,7 +111,6 @@ const formSchema = yup.object().shape({
         <h3> Choose your toppings </h3>
         <label htmlFor="pepperoni">
           <input
-            data-test-id="bestToppings"
             type="checkbox"
             id="pepperoni"
             name="pepperoni"
@@ -135,7 +133,6 @@ const formSchema = yup.object().shape({
 
         <label htmlFor="pineapple">
           <input
-          data-test-id="bestToppings"
             type="checkbox"
             id="pineapple"
             name="pineapple"
@@ -170,7 +167,7 @@ const formSchema = yup.object().shape({
           ></input>
         </label>
       </div>
-      <button data-test-id="submitButton">Order</button>
+      <button>Order</button>
       <pre>{JSON.stringify(order, null, 2)}</pre>
     </form>
   );

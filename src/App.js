@@ -4,10 +4,10 @@ import Order from "./Order"
 const App = () => {
   return (
     <div className = "App">
+      <h1>Lambda Eats</h1>
       <nav>
-        <h1>Lambda Eats</h1>
-          <Link to = "/"> <button>Home </button></Link>
-          <Link to = "/pizza"> <button>Make a Pizza</button> </Link>
+          <Link to = "/"> Home </Link>
+          <Link to = "/pizza"> Make a Pizza </Link>
       </nav>
       <Route exact path="/"> 
       </Route> 
